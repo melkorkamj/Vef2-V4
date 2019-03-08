@@ -29,7 +29,7 @@ CREATE TABLE assignments (
 async function main() {
   console.info(`Set upp gagnagrunn á ${connectionString}`);
   // droppa töflu ef til
-  await query('DROP TABLE IF EXISTS items');
+  await query('DROP TABLE IF EXISTS assignments');
   console.info('Töflu eytt');
 
   // búa til töflur út frá skema
